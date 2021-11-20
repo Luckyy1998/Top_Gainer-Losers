@@ -1,0 +1,11 @@
+version: '3'
+services:
+  <service_1>
+    image: 'img_name'
+    
+  <serivice_2>  
+    build: .
+    volumes:
+      -/app
+      -.:/home/dev
+
