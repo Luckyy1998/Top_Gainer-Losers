@@ -53,7 +53,7 @@ class TopGainersLosers:
 
     def main(self):
         current_time = datetime.datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
-        outdir = f"{datetime.date.today().strftime('%d-%m-%Y')}/{current_time}"
+        outdir = f"reports/{datetime.date.today().strftime('%d-%m-%Y')}/{current_time}"
         if not os.path.exists(outdir):
             os.makedirs(outdir)
         self.load_save_csv(outdir)
